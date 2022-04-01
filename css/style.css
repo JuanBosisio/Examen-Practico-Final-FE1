@@ -1,0 +1,735 @@
+*   {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body{
+    background-image: url(../img/bg-tablet-pattern.svg);
+    background-repeat:no-repeat;
+    background-position: 150% -180%;
+    background-size: 70%;
+
+}
+
+/** Personalizacion del header **/
+#hamburger-icon{
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger-icon div{
+    width: 35px;
+    height: 3px;
+    background-color: #000000;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.open .bar1{
+    -webkit-transform: rotate(-45deg) translate(-6px,6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2{
+    opacity: 0;
+}
+
+.open .bar3{
+    -webkit-transform: rotate(45deg) translate(-6px,-8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu{
+    position: absolute;
+    top:70px;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    list-style: none;
+    background-color: #e95950;
+    height: 50%;
+    animation: menu 0.4s;
+    cursor:none;
+}
+
+@keyframes menu{
+    0% { opacity: 0% }
+    25% { transform: translate(0,-20px);opacity:0%}
+    100% { opacity: 100% }
+}
+
+.mobile-menu{
+    display:none;
+    position:absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+
+.open .mobile-menu li a{
+    text-decoration: none;
+    color: #FAFAFA;
+}
+
+.open .mobile-menu li a:hover{
+    opacity: 0.7;
+    transition-duration: 0.3s;
+}
+
+.mobile-menu{
+    display: none;
+    
+    height:calc(100vh - 50px);
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 75px;
+    width: 100%;
+}
+
+.lista-nav{
+    list-style: none;
+}
+
+.lista-nav li{
+    display: inline-block;
+    font-size: 13px;
+    margin: 0px 28px;
+    font-weight: 600;
+}
+
+.lista-nav li:hover{
+    transition-duration:.3s;
+    opacity: 0.7;
+}
+
+.lista-nav li a{
+    text-decoration: none;
+    color:#242E52;
+}
+
+.logo{
+    float: left;
+    height: 23.74px;
+    width: auto;
+    
+}
+
+.btn{
+    line-height: 45px;
+    text-decoration: none;
+    background-color: #F3603B;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    width: 134px;
+    height: 44px;
+    font-size: 13.6px;
+    color: white;
+    text-align: center;
+}
+
+.active-btn:hover{
+    opacity: 0.7;
+    transition-duration: 0.3s;
+}
+
+
+/** Personalizacion de la primera plantilla  **/
+
+.intro{
+    display: flex;
+    justify-content: space-around;
+    margin: 150px 60px;
+    align-items: center;
+    
+}
+
+.intro-lado1{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: auto;
+    
+}
+
+.intro-lado1 h1{
+    font-size: 58px;
+    margin-bottom: 50px;
+    color: #232851;
+}
+
+.intro-lado2{
+    width: 45%;
+    height: auto;
+    object-fit: contain;
+    margin-left: 50px;
+}
+
+
+.intro-lado1 p{
+    margin-bottom: 50px;
+    font-size: 18.5px;
+    color: #B3B2B7;
+    width: 80%;
+}
+
+/** Personalizacion de la segunda plantilla **/
+
+.second-background{
+    background-image: url(../img/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: -300px 300px;
+}
+
+.about-us{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 150px 0px;
+    width: auto;
+    max-width: 100%;
+    max-width: 100%;
+}
+
+.about-us-section1{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: auto;
+}
+
+.about-us-section1 h2{
+    font-size: 38px;
+    color: #232851;
+    margin-bottom: 50px;
+}
+
+.about-us-section1 p{
+    font-size: 17px;
+    width: 80%;
+    color: #B3B2B7;
+}
+
+.about-us-section2{
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us-section2 div{
+   display: flex;
+   flex-direction: row;
+   margin-bottom: 40px;
+}
+
+.about-us-section2 .description h3{
+    color: #232851;
+    font-size: 18px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+}
+
+.about-us-section2 .description p{
+    color: #B3B2B7;
+    font-size: 17px;
+}
+
+#btn-h3{
+    width: 100px;
+    height: 50px;
+    margin-right: 50px;
+}
+
+/** Personalizacion de la plantilla de testimonios **/
+
+.testimonials-box{
+    margin-bottom: 180px;
+}
+
+.testimonials-box h2{
+    margin-bottom: 120px;
+    text-align: center;
+    align-items: center;
+
+}
+
+.testimonials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.testimonials span{
+    width: 28%;
+    padding: 0px 30px;
+    padding-bottom: 50px;
+    text-align: center;
+    height: auto;
+    background-color: #FAFAFA;
+   
+}
+
+.photo-testimonial1,
+.photo-testimonial2,
+.photo-testimonial3{
+    z-index: 10;
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    position: relative;
+    top: -50px;
+}
+
+.photo-testimonial1{
+    background-image: url(../img/avatar-anisha.png);
+}
+
+.photo-testimonial2{
+    background-image: url(../img/avatar-ali.png);
+}
+
+.photo-testimonial3{
+    background-image: url(../img/avatar-richard.png);
+}
+
+.scroll{
+    display: none;
+}
+
+.testimonials span h4{
+    margin:0;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.testimonials span p{
+    color:#B9B9C1;
+}
+
+.button-testimonials{
+    display: flex;
+    justify-content: center;
+}
+
+/** Personalizacion de la plantilla 3 **/
+
+.section3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #F3613C;
+    align-items: center;
+    height: 240px;
+    width: auto;
+    background-image: url(../img/bg-simplify-section-desktop.svg);
+    background-repeat:no-repeat;
+}
+
+.section3 h1{
+    color: #FAFAFA;
+    font-size: 30px;
+}
+
+#btn-section3{
+    background-color: #FAFAFA;
+    color: #F3613C;
+}
+
+/** Personalizacion del footer **/
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1E1E26;
+    align-items: center;
+    height: 250px;
+    width: auto;
+}
+
+
+.footer-section1{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 70%;
+}
+
+.social-media li a:link,
+.social-media li a:visited{
+    text-decoration: none;
+    color: #FAFAFA;
+    font-size: 20px;
+}
+
+.fa-facebook-square,
+.fa-youtube,
+.fa-twitter,
+.fa-pinterest,
+.fa-instagram{
+    transition: color .2s;
+}
+
+.fa-facebook-square:hover{
+    color:#3b5998;
+    transition-duration: 0.3s;
+}
+
+.fa-youtube:hover{
+    color:#ff0000;
+    transition-duration: 0.3s;
+}
+
+.fa-twitter:hover{
+    color:#55acee;
+    transition-duration: 0.3s;
+}
+
+.fa-pinterest:hover{
+    color:#cb2027;
+    transition-duration: 0.3s;
+}
+
+.fa-instagram:hover{
+    color:#e95950;
+    transition-duration: 0.3s;
+}
+
+.footer-section1 ul{
+    padding: 0;
+}
+
+.footer-section1 li{
+    display: inline-block;
+    margin: 10px 7px;
+}
+
+.footer-section23{
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.footer-section2 ul{
+    padding: 0px;
+}
+
+.footer-section2 li{
+    list-style: none;
+    padding: 7px;
+    
+}
+
+.footer-section2 li a{
+    text-decoration: none;
+    color:white;
+}
+
+.footer-section2 li a:hover{
+    color:#F3613C;
+    transition-duration: 0.3s;
+}
+
+.footer-section3 ul{
+    padding: 0px;
+}
+
+.footer-section3 li{
+    list-style: none;
+    padding: 7px;
+}
+
+.footer-section3 li a{
+    text-decoration: none;
+    color:white;
+}
+
+.footer-section3 li a:hover{
+    color:#F3613C;
+    transition-duration: 0.3s;
+}
+
+.footer-section4{
+    text-align: right;
+    position: relative;
+}
+
+#email{
+    border-radius: 40px;
+    height: 40px;
+    width: 240px;
+    text-align: left;
+    border:none;
+    margin-right: 5px;
+}
+
+.send-button{
+    background-color: #F3613C;
+    color:white;
+    width: 65px;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+}
+
+.send-button:hover{
+    opacity: 0.7;
+    transition-duration: 0.3s;
+}
+
+.footer-section4 p{
+    margin-top: 50px;
+    position: absolute;
+    right: 2%;
+    color:#8C8C94;
+    font-size: 12.5px;
+}
+
+#boton-section3:hover{
+    background-color: white;
+    color: #F3613C;
+}
+
+
+@media (max-width: 460px){
+    *{
+        padding: 0;
+        margin: 0;
+        
+    }
+
+    #hamburger-icon{
+        display:block;
+    }
+    
+    body{
+        
+        text-align: center;
+        background-position: -60% -50%;
+        background-size: 160%;
+    }
+
+    nav{
+        flex-direction: row-reverse;
+        align-content: flex-end;
+        margin-top:30px;
+    }
+
+    .lista-nav{
+        display: none;
+    }
+
+ 
+    .btn-menu {
+        display: block;
+        margin-left: 150px;
+        margin-bottom: 10px;
+    }
+    
+
+
+    #first-btn{
+        display: none;
+    }
+
+    .intro{
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        text-align: center;
+        margin: 0;
+        margin-top: 80px;
+        width:100%;
+        height: 80%;
+        align-items: center;
+        align-content: center;
+    }
+
+    .intro-lado1{
+        width: 90%;
+        margin-top: 30px;
+        align-items: center;
+    }
+
+    .intro-lado1 h1{
+        text-align: center;
+        font-size: 150%;
+        margin-bottom: 20px;
+    }
+
+    .intro-lado1 p{
+        font-size: 130%;
+    }
+    .intro-lado2{
+        margin:0;
+        width: 100%;
+        height: 70%;
+    }
+
+    .intro-lado2 img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .second-background{
+        background-size: 100%;
+        background-position: -190px 60px;
+    }
+
+    .about-us{
+        flex-direction: column;
+        margin: 100px 0;
+        align-content: center;
+        align-items: center;
+    }
+
+    .about-us-section1{
+        margin-bottom: 50px;
+        align-items: center;
+        width: 80%;
+    }
+
+    .about-us-section1 h2{
+        margin-bottom: 30px;
+    }
+
+    .about-us-section1 p{
+        width: 90%;
+    }
+    
+    .about-us-section2 .description{
+        position: relative;
+        
+    }
+
+    .about-us-section2 .description h3{
+        font-size: 16px;
+        height: 50px;
+        width: 84%;
+        padding: 0px;
+        background-color: rgba(255, 100, 100, 0.2);
+        margin-left:60px;
+        padding-top: 13px;
+        text-align:start;
+        padding-left: 50px;
+        
+    }
+    
+    #btn-h3{
+        margin: 0;
+        position: absolute;
+    }
+
+    .about-us-section2 .description p{
+        padding:0px 30px;
+        font-size: 16px;
+    }
+    
+    /** Quise hacer un testimonios con scroll hacia los costados, pero me da problemas con el posicionamiento que puse anteriormente **/
+
+    #testimonial2{
+        display: none;
+    }
+
+    #testimonial3{
+        display: none;
+    }
+
+    .testimonials span{
+        width: 400px;
+        height: 300px;
+    }
+
+    .container{
+        position: relative;
+    }
+
+    .scroll{
+        position: relative;
+        display: inline-block;
+        bottom: 130px;
+    }
+
+    .scroll span i{
+        color:#000000;
+        font-size: 10px;
+    }
+
+    .fa-circle:hover,
+    .fa-circle:visited {
+        opacity: 0.5;
+    }
+   
+    .section3{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 400px;
+        background-size:cover;
+    }
+
+    .section3 h1{
+        font-size: 250%;
+        margin: 35px;
+    }
+
+    footer{
+        flex-direction: column;
+        height: 100%;
+        align-content: center;
+        
+    }
+
+    .footer-section1{
+        order: 1;
+        flex-direction: column-reverse;
+        height: 200px;
+    }
+
+    .footer-section1 li i{
+        font-size: 45px;
+    }
+
+    .footer-section1 .logo{
+        margin-bottom: 50px;
+    }
+
+    .footer-section23{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .footer-section2{
+        text-align: left;
+    }
+
+    .footer-section3{
+        text-align: left;
+    }
+
+    .footer-section4{
+        order: -1;
+        margin: 50px 10px;
+    }
+
+    .footer-section4 p{
+        position: absolute;
+        top: 985%;
+        right: 14%;
+    }
+}
